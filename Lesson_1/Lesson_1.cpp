@@ -1,20 +1,64 @@
-// Lesson_1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
 
+#include <Windows.h>
+
+using namespace std;
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+    //Середнє арефметичне
+
+    float x, y, z;
+
+    cout << "---Обчислення середнього арефметичного---" << endl;
+
+
+    cout << "Введіть перше число (x):";
+    cin >> x;
+
+    cout << "Введіть друге число (y):";
+    cin >> y;
+
+    cout << "Введіть третє число (z):";
+    cin >> z;
+
+    cout << "M = (" << x << " + " << y << " + " << z << ") / 3 = " << (x + z + y) / 3 << endl << endl;
+
+
+    //Розрахунок відсотків
+
+    float P, r;
+
+    cout << "---Розрахунок відсотків---" << endl;
+
+    cout << "Введіть число (P):";
+    cin >> P;
+
+    cout << "Введіть відсотки (r):";
+    cin >> r;
+
+    cout << "S = " << P << " * (" << r << " / 100) = " << P * (r / 100) << endl << endl;
+
+
+    //Час у дорозі
+
+    float s, v;
+
+    cout << "---Час у дорозі---" << endl;
+
+    cout << "Відстань (s):";
+    cin >> s;
+
+    cout << "Швидкість (v):";
+    cin >> v;
+
+    cout << "t = " << s << " / " << v << " = " << s / v;
+
+
+    return 0;
+
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
